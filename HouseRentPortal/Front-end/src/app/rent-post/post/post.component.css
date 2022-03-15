@@ -1,0 +1,24 @@
+.postpanel {
+    background-color: aliceblue;
+    margin-bottom: 15px;
+    padding-top: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    -webkit-box-shadow:  rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    -moz-box-shadow:  rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.propMain {
+    background-color: rgb(58, 121, 175);
+    color: azure;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;  
+}
+
+.postParent {
+    background-color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    -webkit-box-shadow:  rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    -moz-box-shadow:  rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}

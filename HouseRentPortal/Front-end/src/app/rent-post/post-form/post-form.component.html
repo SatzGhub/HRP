@@ -1,0 +1,89 @@
+
+<div class="row postPropMain">
+    <div class="col-xs-12 postPropHead" >
+        <h4>Post Your Property</h4>
+    </div>
+    <div class="col-xs-12" style="padding: 10px;">
+      <form [formGroup]="postForm" (ngSubmit)="onSubmit()">
+       
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label for="locality">Locality</label>
+              <input
+                type="text"
+                id="locality"
+                formControlName="locality"
+                class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label for="city">City</label>
+              <input
+                type="text"
+                id="city"
+                formControlName="city"
+                class="form-control"
+                #city>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-xs-12">
+                <div class="form-group">
+                    <label for="sqFeet">SQ.Feet</label>
+                    <input
+                    type="text"
+                    id="sqFeet"
+                    formControlName="sqFeet"
+                    class="form-control"
+                    >
+                </div>
+            </div>
+        </div>
+        
+          
+          <div class="row">
+            <div class="col-xs-12">
+                  <div class="form-group">
+                      <label for="type">Type</label>
+                      <input
+                      type="text"
+                      id="type"
+                      formControlName="type"
+                      class="form-control"
+                      >
+                  </div>
+              </div>
+          </div>
+        
+        <div class="row">
+            <div class="col-xs-12">
+              <div class="form-group">
+                <label for="price">Price</label>
+                <input
+                  type="text"
+                  id="price"
+                  formControlName="price"
+                  class="form-control"
+                  #price>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12" align="center">
+              <button
+                type="submit"
+                class="btn btn-success"
+                [disabled]="!postForm.valid">Save</button>&nbsp;&nbsp;&nbsp;&nbsp;
+              <button type="button" class="btn btn-info" (click)="onReset()">Reset</button>
+            </div>
+          </div>
+      </form>
+    </div>
+  </div>
+  

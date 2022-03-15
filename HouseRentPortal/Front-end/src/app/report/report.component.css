@@ -1,0 +1,13 @@
+.reportHead {
+    background-color: rgb(58, 121, 175);
+    color: azure;
+    font-size: 16px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;  
+    font-weight: bold;
+    padding: 10px;
+}
+
+.reportSearch {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,28 @@
+<p class="requestsHead"> Rent Requests - Action Needed </p>
+
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Property ID</th>
+        <th>Locality</th>
+        <th>City</th>
+        <th>Requested By</th>
+        <th>Requester Contact</th>
+        <th>Approval Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let request of rentRequest" >
+        <td>{{request.propId}}</td>
+        <td>{{request.locality}}</td>
+        <td>{{request.city}}</td>
+        <td>{{request.requestedBy}}</td>
+        <td>{{request.contact}}</td>
+        <td>
+            <button type="button" class="btn btn-success" >Accept</button> &nbsp;&nbsp;/ &nbsp;&nbsp;
+            <button type="button" class="btn btn-info" (click)="onDecline()">Decline</button>
+        </td>
+      </tr>
+     
+    </tbody>
+  </table>

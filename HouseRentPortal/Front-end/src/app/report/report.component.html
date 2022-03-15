@@ -1,0 +1,56 @@
+<p class="reportHead"> Property Reports </p>
+
+<div class="reportSearch">
+<form class="row g-4">
+     <div class="col-md-3">
+        <input type="text" class="form-control" placeholder="Enter City" name="city">
+      </div>
+      <div class="col-md-3">
+        <input type="text" class="form-control" placeholder="Enter Status" name="status">
+      </div>
+      <div class="col-md-3">
+        <input type="text" class="form-control" placeholder="Enter Owner ID" name="ownerId">
+      </div>
+      <div class="col-md-2" >
+        <select class="form-control form-select" aria-label="Select Type">
+            <option>1-BHK</option>
+            <option>2-BHK</option>
+            <option>3-BHK</option>
+          </select> 
+      </div>
+      <div class="col-md-1" >
+          
+        <button type="button" class="btn btn-success" >Search</button> 
+      </div>
+
+  </form> 
+</div>
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Owner ID</th>
+        <th>Property ID</th>
+        <th>Locality</th>
+        <th>City</th>
+        <th>Type</th>
+        <th>Price</th>
+        <th>Requested By</th>
+        <th>Approval Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let report of rentReport" >
+        <td>{{report.ownerId}}</td>
+        <td>{{report.propId}}</td>
+        <td>{{report.locality}}</td>
+        <td>{{report.city}}</td>
+        <td>{{report.type}}</td>
+        <td>{{report.requestedBy}}</td>
+        <td>{{report.price}}</td>
+        <td>{{report.approvalStatus}}</td>
+       
+      </tr>
+     
+    </tbody>
+  </table>
+

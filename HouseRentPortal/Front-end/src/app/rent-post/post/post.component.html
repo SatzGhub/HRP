@@ -1,0 +1,33 @@
+
+<div class="row" >
+    <div class="col-xs-12 propMain" style="padding: 5px;">
+      <h4>Property Posts</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 postpanel" *ngFor="let post of rentPost" >
+        <div class="card">
+            <div class="card-header"><b>Property ID:  {{post.propId}} </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button style="margin: 5px;" class="btn btn-primary btn-sm" (click)="onNewRecipe()">Request Rent</button></div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item" >
+                       Locality: {{ post.locality }} 
+                    </li>
+                    <li class="list-group-item" >
+                        City:  {{ post.city }}
+                     </li>
+                     <li class="list-group-item" >
+                        type:  {{ post.type }}
+                     </li>
+                     <li class="list-group-item" >
+                        Squer Feet:  {{ post.sqFeet }}
+                     </li>
+                     <li class="list-group-item" >
+                        Price:  {{ post.price }}
+                     </li>
+                </ul>
+            </div>
+            <div class="card-footer"></div>
+          </div>
+    </div>
+  </div>

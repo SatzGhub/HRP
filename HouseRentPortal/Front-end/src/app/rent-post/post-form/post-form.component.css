@@ -1,0 +1,15 @@
+.postPropMain {
+    background-color: azure;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    -webkit-box-shadow:  rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    -moz-box-shadow:  rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;  
+}
+
+.postPropHead {
+    background-color: rgb(8, 168, 80);
+    color: azure;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;  
+}
